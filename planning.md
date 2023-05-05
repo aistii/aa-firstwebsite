@@ -6,12 +6,12 @@ This file includes information on element styling, including colors and fonts.
 - __Font:__ Bebas Neue (capitalized sans-serif, narrow)
 - __Font Color:__ #f2f2f2 (light gray)
 ### H1 Headings
-- __Font:__ Barlow (italicized, bold)
+- __Font:__ Barlow (italicized, bold) (Barlow: SemiBold 600 Italic)
 - __Font Color:__ Dependent on background color:
 	- #a63117 (brick red) on lighter background (subject to change)
 	- #f2f2f2 (light gray) on darker background (subject to change)
 ### H2 and Smaller Headings:
-- __Font:__ Barlow (normal weight)
+- __Font:__ Barlow (normal weight) (Barlow: Regular 400)
 - __Font Color:__ Dependent on background color:
 	- #734d45 (chocolate color) on lighter background (subject to change)
 	- #f2f2f2 (light gray) on darker background (subject to change)
