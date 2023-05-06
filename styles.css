@@ -1,0 +1,299 @@
+/* basic font and color palette */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,600&family=Bebas+Neue&display=swap');
+:root {
+    --body-font: 'Barlow', sans-serif;
+    --bg-paletext-color: #f2f2f2;
+    --section-acc-color: #f2a679;
+    --small-acc-color: #d9564a;
+    --brown-text-color: #734d45;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+
+}
+/*
+== TOP NAVIGATION BAR SECTION ==
+*/
+
+/* Navigation Bar + Its Links */
+.topNav {
+    display: flex;
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #a63117;
+    margin: 0 0;
+}
+
+/* Logo "Okkan Boba" */
+#logo a {
+    font-family: var(--body-font);
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: var(--bg-paletext-color);
+    color: #f2f2f2;
+    text-decoration: none;
+    user-select: none;
+}
+
+.topNav--content {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topNav--item {
+    font-size: 2em;
+    display: inline;
+}
+
+.topNav--item a {
+    text-transform: uppercase;
+    display: block;
+    padding: .5em 1.5em;
+    font-family: var(--body-font);
+    text-decoration: none;
+    color: var(--bg-paletext-color);
+    color: #f2f2f2;
+    transition: font-weight .25s ease;
+}
+
+.topNav--item a:hover {
+    font-weight: bold;
+}
+
+/*
+== Body Text Styling
+ */
+h1 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 3.5em;
+    text-transform: lowercase;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Barlow", sans-serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.25em;
+    color: #734d45;
+}
+
+a {
+    color: #734d45;
+}
+/*
+== Main Global
+*/
+footer {
+    text-align:center;
+    margin: 2em auto 1em;
+}
+main,
+footer {
+    min-width: 900px;
+    width: 70%;
+    max-width: 75%;
+    margin: 2em auto;
+}
+
+/*
+== Page-specific styles ==
+*/
+
+/* Home */
+.hero-left {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(242, 166, 121, .25);
+    width: 100%;
+    padding: 20px;
+}
+
+.hero-left h1 {
+    text-decoration: solid underline #d9564a 10px;
+}
+
+.hero-left-img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    object-position: right;
+    padding: 10px;
+}
+
+/* Menu */
+.menuGallery {
+    min-width: 900px;
+    width: 70%;
+    max-width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap:2em;
+}
+
+.menuGallery {
+    text-align: center;
+}
+
+.menuGallery--category img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.menuGallery--category h2 {
+    text-align: center;
+}
+
+.menuGallery--category a {
+    text-decoration: none;
+    color: #734d45
+}
+
+/* Locations */
+.noShow {
+    list-style-type: none;
+    min-width: 900px;
+    width: 70%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.noShow li {
+    padding: 2em 0;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location--image {
+    width: 330px;
+    height: 253px;
+}
+
+.location--image img {
+    width: 330px;
+    height: 253px;
+    object-fit: cover;
+}
+
+.location--text {
+    padding-left: 1em;
+    color: #734d45;
+}
+
+.location--text a{
+    text-decoration: none;
+    color: #734d45;
+}
+
+.comingSoon {
+    color:#d9564a;
+    font-style: italic;
+}
+
+/* contact */
+form {
+    background-color:rgba(242, 166, 121, .25);
+    min-width: 900px;
+    width: 70%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    margin: 1em auto;
+    text-align: center;
+
+}
+
+label {
+
+    display: block;
+    font-family: "Barlow", sans-serif;
+    font-size: 2em;
+    color: #734d45;
+    margin: 0.25em auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 500px;
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    padding: 3px;
+    outline: none;
+    background-color: #f2f2f2;
+    border: solid 4px rgba(0,0,0,0);
+    transition: border 0.15s ease;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+select:focus,
+textarea:focus {
+    border: solid 4px #f2a679;
+}
+
+textarea {
+    height: 300px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.disclaimerAgree {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.disclaimerAgree input[type=checkbox] {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+.checkboxLabel {
+    font-size: 1.5em;
+    display: flex;
+    align-content: center;
+}
+
+button#submitContactFormBtn {
+    width: 250px;
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    padding: 3px;
+    outline: none;
+    background-color: #f2f2f2;
+    outline: none;
+    border: none;
+}
+
+button#submitContactFormBtn:active {
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,.25);
+}

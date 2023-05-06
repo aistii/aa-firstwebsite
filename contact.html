@@ -5,12 +5,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,600&family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
         <title>Okkan Boba | Contact Us</title>
     </head>
     <body>
         <header>
-            <p id="logo"><a href="index.html">Okkan Boba</a></p>
             <div class="topNav">
+                <p id="logo"><a href="index.html">Okkan Boba</a></p>
                 <nav>
                     <ul class="topNav--content">
                         <li class="topNav--item"><a href="index.html">About</a></li>
@@ -45,10 +46,11 @@
                 <fieldset>
                     <label for="comments">Comments</label>
                     <textarea></textarea>
-                    <input type="checkbox" id="replyOk">
-                    <label for="replyOk">I am willing to receive a reply to this form submission.</label>
                 </fieldset>
-                <button type="submit">Send</button>
+                <fieldset class="disclaimerAgree">
+                    <label for="replyOk" class="checkboxLabel"><input type="checkbox" id="replyOk">I am willing to receive a reply to this form submission.</label>
+                </fieldset>
+                <button type="submit" id="submitContactFormBtn">Send</button>
             </form>
         </main>
         <footer>
